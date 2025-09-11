@@ -1,0 +1,8 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["*.palette.json"],
+      "url": "./schema/v0.1/palettejson.schema.json"
+    }
+  ]
+}

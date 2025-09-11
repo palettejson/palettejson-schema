@@ -1,0 +1,16 @@
+{
+  "palettes": [
+    {
+      "name": "Example",
+      "slug": "example",
+      "type": "categorical",
+      "colors": [
+        { "hex": "#FFFFFF" },
+        { "hex": "#000000" },
+        { "hex": "#FF0000" },
+        { "hex": "#00FF00" },
+        { "hex": "#0000FF" }
+      ]
+    }
+  ]
+}

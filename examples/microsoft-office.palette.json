@@ -1,0 +1,483 @@
+{
+  "palettes": [
+    {
+      "name": "Office 2024",
+      "slug": "mso24",
+      "type": "categorical",
+      "description": "Default Microsoft Office 2024 color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#0D2841" },
+        { "hex": "#E8E8E8" },
+        { "hex": "#156082" },
+        { "hex": "#E97030" },
+        { "hex": "#176B25" },
+        { "hex": "#0C9FD5" },
+        { "hex": "#A02C92" },
+        { "hex": "#4DA72D" }
+      ]
+    },
+    {
+      "name": "Office 2013",
+      "slug": "mso13",
+      "type": "categorical",
+      "description": "Default Microsoft Office 2013 color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#43536A" },
+        { "hex": "#E7E6E6" },
+        { "hex": "#4572C4" },
+        { "hex": "#EE7D30" },
+        { "hex": "#A5A5A5" },
+        { "hex": "#FFC000" },
+        { "hex": "#5B9CD5" },
+        { "hex": "#71AD47" }
+      ]
+    },
+    {
+      "name": "Office 2007",
+      "slug": "mso07",
+      "type": "categorical",
+      "description": "Default Microsoft Office 2007 color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#1D497D" },
+        { "hex": "#EEECE1" },
+        { "hex": "#4E81BE" },
+        { "hex": "#BF504D" },
+        { "hex": "#9BBB59" },
+        { "hex": "#8064A2" },
+        { "hex": "#4AACC6" },
+        { "hex": "#F79644" }
+      ]
+    },
+    {
+      "name": "Grayscale",
+      "slug": "grayscale",
+      "type": "categorical",
+      "description": "Grayscale color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#000000" },
+        { "hex": "#F8F8F8" },
+        { "hex": "#DDDDDD" },
+        { "hex": "#B2B2B2" },
+        { "hex": "#969696" },
+        { "hex": "#808080" },
+        { "hex": "#5F5F5F" },
+        { "hex": "#4D4D4D" }
+      ]
+    },
+    {
+      "name": "Blue Warm",
+      "slug": "blue-warm",
+      "type": "categorical",
+      "description": "Blue Warm color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#242852" },
+        { "hex": "#ACCBF9" },
+        { "hex": "#4A66AC" },
+        { "hex": "#619FD1" },
+        { "hex": "#2980D4" },
+        { "hex": "#7F8EA8" },
+        { "hex": "#9D90A0" }
+      ]
+    },
+    {
+      "name": "Blue",
+      "slug": "blue",
+      "type": "categorical",
+      "description": "Blue color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#15406D" },
+        { "hex": "#DBEFF9" },
+        { "hex": "#0970C5" },
+        { "hex": "#009DD9" },
+        { "hex": "#0AD0D9" },
+        { "hex": "#0ECF9C" },
+        { "hex": "#7CCA61" },
+        { "hex": "#A4C24A" }
+      ]
+    },
+    {
+      "name": "Blue II",
+      "slug": "blue-2",
+      "type": "categorical",
+      "description": "Blue II color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#345B73" },
+        { "hex": "#DEE3E4" },
+        { "hex": "#1CAEE4" },
+        { "hex": "#2483C5" },
+        { "hex": "#29CED7" },
+        { "hex": "#42BB97" },
+        { "hex": "#3D8853" },
+        { "hex": "#62A3A0" }
+      ]
+    },
+    {
+      "name": "Blue Green",
+      "slug": "blue-green",
+      "type": "categorical",
+      "description": "Blue Green color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#383444" },
+        { "hex": "#CDDCE6" },
+        { "hex": "#3394BB" },
+        { "hex": "#57B6C0" },
+        { "hex": "#76BDA7" },
+        { "hex": "#7A8C8F" },
+        { "hex": "#84ACB6" },
+        { "hex": "#2483C5" }
+      ]
+    },
+    {
+      "name": "Green",
+      "slug": "green",
+      "type": "categorical",
+      "description": "Green color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#446051" },
+        { "hex": "#E3DED2" },
+        { "hex": "#529F37" },
+        { "hex": "#8BB832" },
+        { "hex": "#C0D13A" },
+        { "hex": "#019675" },
+        { "hex": "#4AB5C3" },
+        { "hex": "#0989B1" }
+      ]
+    },
+    {
+      "name": "Green Yellow",
+      "slug": "green-yellow",
+      "type": "categorical",
+      "description": "Green Yellow color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#446051" },
+        { "hex": "#E0DFCC" },
+        { "hex": "#98CB36" },
+        { "hex": "#61A536" },
+        { "hex": "#38A66E" },
+        { "hex": "#43C2A3" },
+        { "hex": "#4DB3CE" },
+        { "hex": "#52C2F9" }
+      ]
+    },
+    {
+      "name": "Yellow",
+      "slug": "yellow",
+      "type": "categorical",
+      "description": "Yellow color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#3A3029" },
+        { "hex": "#E4DFDC" },
+        { "hex": "#FFCA00" },
+        { "hex": "#F8931D" },
+        { "hex": "#CD8D3E" },
+        { "hex": "#ED7012" },
+        { "hex": "#E84621" },
+        { "hex": "#9C6A6A" }
+      ]
+    },
+    {
+      "name": "Yellow Orange",
+      "slug": "yellow-orange",
+      "type": "categorical",
+      "description": "Yellow Orange color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#4E3A2E" },
+        { "hex": "#FDEDC9" },
+        { "hex": "#F0A22F" },
+        { "hex": "#A5644C" },
+        { "hex": "#B78A80" },
+        { "hex": "#C4986D" },
+        { "hex": "#A19673" },
+        { "hex": "#C27529" }
+      ]
+    },
+    {
+      "name": "Orange",
+      "slug": "orange",
+      "type": "categorical",
+      "description": "Orange color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#617052" },
+        { "hex": "#CDDFEA" },
+        { "hex": "#E48213" },
+        { "hex": "#BE582B" },
+        { "hex": "#865640" },
+        { "hex": "#9B8357" },
+        { "hex": "#C2BD80" },
+        { "hex": "#959F88" }
+      ]
+    },
+    {
+      "name": "Orange Red",
+      "slug": "orange-red",
+      "type": "categorical",
+      "description": "Orange Red color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#696464" },
+        { "hex": "#E9E5DC" },
+        { "hex": "#D34816" },
+        { "hex": "#9B2C1F" },
+        { "hex": "#A38D6A" },
+        { "hex": "#946151" },
+        { "hex": "#908385" },
+        { "hex": "#855D5D" }
+      ]
+    },
+    {
+      "name": "Red Orange",
+      "slug": "red-orange",
+      "type": "categorical",
+      "description": "Red Orange color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#505046" },
+        { "hex": "#EEECE1" },
+        { "hex": "#EA4B1F" },
+        { "hex": "#FFBC48" },
+        { "hex": "#B64926" },
+        { "hex": "#FF8326" },
+        { "hex": "#CC9900" },
+        { "hex": "#B12401" }
+      ]
+    },
+    {
+      "name": "Red",
+      "slug": "red",
+      "type": "categorical",
+      "description": "Red color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#323232" },
+        { "hex": "#E5C244" },
+        { "hex": "#A52F0D" },
+        { "hex": "#D55817" },
+        { "hex": "#E29823" },
+        { "hex": "#B29C7C" },
+        { "hex": "#7F5F52" },
+        { "hex": "#B27E47" }
+      ]
+    },
+    {
+      "name": "Red Violet",
+      "slug": "red-violet",
+      "type": "categorical",
+      "description": "Red Violet color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#454551" },
+        { "hex": "#D8D9DC" },
+        { "hex": "#E32D90" },
+        { "hex": "#C830CB" },
+        { "hex": "#4EA6DC" },
+        { "hex": "#4675E6" },
+        { "hex": "#8971E1" },
+        { "hex": "#D54573" }
+      ]
+    },
+    {
+      "name": "Violet",
+      "slug": "violet",
+      "type": "categorical",
+      "description": "Violet color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#383444" },
+        { "hex": "#DDD8DC" },
+        { "hex": "#AC83C5" },
+        { "hex": "#8584C7" },
+        { "hex": "#5C729A" },
+        { "hex": "#6997B0" },
+        { "hex": "#84ACB6" },
+        { "hex": "#6D8182" }
+      ]
+    },
+    {
+      "name": "Violet II",
+      "slug": "violet-2",
+      "type": "categorical",
+      "description": "Violet II color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#632E62" },
+        { "hex": "#EAE5EB" },
+        { "hex": "#92288E" },
+        { "hex": "#9B57D3" },
+        { "hex": "#755DD9" },
+        { "hex": "#655FB9" },
+        { "hex": "#46A5ED" },
+        { "hex": "#5982DC" }
+      ]
+    },
+    {
+      "name": "Median",
+      "slug": "median",
+      "type": "categorical",
+      "description": "Median color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#775F54" },
+        { "hex": "#EBDFC3" },
+        { "hex": "#94B6D3" },
+        { "hex": "#DD7E45" },
+        { "hex": "#A5AA81" },
+        { "hex": "#D8B35C" },
+        { "hex": "#7BA69E" },
+        { "hex": "#978C8C" }
+      ]
+    },
+    {
+      "name": "Paper",
+      "slug": "paper",
+      "type": "categorical",
+      "description": "Paper color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#434D26" },
+        { "hex": "#FFFAC9" },
+        { "hex": "#A5B693" },
+        { "hex": "#F2A447" },
+        { "hex": "#E7BC29" },
+        { "hex": "#D092A6" },
+        { "hex": "#9D85C0" },
+        { "hex": "#809EC2" }
+      ]
+    },
+    {
+      "name": "Marquee",
+      "slug": "marquee",
+      "type": "categorical",
+      "description": "Marquee color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#5E5E5E" },
+        { "hex": "#DDDDDD" },
+        { "hex": "#418AB3" },
+        { "hex": "#A6B827" },
+        { "hex": "#F69201" },
+        { "hex": "#838383" },
+        { "hex": "#FEC300" },
+        { "hex": "#DE5327" }
+      ]
+    },
+    {
+      "name": "Slipstream",
+      "slug": "slipstream",
+      "type": "categorical",
+      "description": "Slipstream color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#1F2745" },
+        { "hex": "#B4DCFA" },
+        { "hex": "#4E67C7" },
+        { "hex": "#5DCCF3" },
+        { "hex": "#A7EA53" },
+        { "hex": "#5DCEAE" },
+        { "hex": "#FE8021" },
+        { "hex": "#F24123" }
+      ]
+    },
+    {
+      "name": "Aspect",
+      "slug": "aspect",
+      "type": "categorical",
+      "description": "Aspect color theme",
+      "author": {
+        "name": "Microsoft Corporation",
+        "url": "https://microsoft.com"
+      },
+      "colors": [
+        { "hex": "#323232" },
+        { "hex": "#E3DED1" },
+        { "hex": "#F07F06" },
+        { "hex": "#9F2935" },
+        { "hex": "#1B587C" },
+        { "hex": "#4E8542" },
+        { "hex": "#614878" },
+        { "hex": "#B58E52" }
+      ]
+    }
+  ]
+}
