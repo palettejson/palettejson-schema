@@ -327,6 +327,33 @@
           "items": { "type": "number" }
         },
 
+        "altRepresentations": {
+          "type": "array",
+          "items": {
+            "allOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "colorSpace": {
+                    "type": "string",
+                    "enum": [
+                      "DisplayP3",
+                      "Lab",
+                      "OKLCH",
+                      "sRGB",
+                      "sRGB-linear-extended",
+                      "HSL"
+                    ]
+                  },
+                  "components": { "type": "array" }
+                }
+              },
+              { "$ref": "#/$defs/ColorSpaceValidation" }
+            ]
+          }
+        },
+
         "references": {
           "type": "array",
           "items": {
@@ -355,6 +382,122 @@
         "legibility": { "$ref": "#/$defs/Legibility" }
       },
       "anyOf": [{ "required": ["hex"] }, { "required": ["components"] }]
+    },
+    "ColorSpaceValidation": {
+      "type": "object",
+      "required": ["colorSpace", "components"],
+      "$comment": "Designed for self-contained colour entries (altRepresentations). Palette-level validation is intentionally separate, because colours there inherit colorSpace.",
+      "allOf": [
+        {
+          "if": { "properties": { "colorSpace": { "const": "DisplayP3" } } },
+          "then": {
+            "properties": {
+              "components": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 4,
+                "items": { "type": "number", "minimum": 0, "maximum": 1 }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "colorSpace": { "const": "Lab" } } },
+          "then": {
+            "properties": {
+              "components": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": [
+                  { "type": "number", "minimum": 0, "maximum": 100 },
+                  { "type": "number" },
+                  { "type": "number" }
+                ],
+                "$comment": "Lab: L (0..100), a/b unbounded (linters may warn on magnitude)."
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "colorSpace": { "const": "OKLCH" } } },
+          "then": {
+            "properties": {
+              "components": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": [
+                  { "type": "number", "minimum": 0, "maximum": 1 },
+                  { "type": "number", "minimum": 0 },
+                  { "type": "number", "minimum": 0, "exclusiveMaximum": 360 }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "colorSpace": { "const": "sRGB" } } },
+          "then": {
+            "properties": {
+              "components": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 4,
+                "items": { "type": "number", "minimum": 0, "maximum": 1 }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "colorSpace": { "const": "sRGB-linear-extended" } }
+          },
+          "then": {
+            "properties": {
+              "components": {
+                "oneOf": [
+                  {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 3,
+                    "items": { "type": "number" }
+                  },
+                  {
+                    "type": "array",
+                    "prefixItems": [
+                      { "type": "number" },
+                      { "type": "number" },
+                      { "type": "number" },
+                      { "type": "number", "minimum": 0, "maximum": 1 }
+                    ],
+                    "items": false
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "colorSpace": { "const": "HSL" } } },
+          "then": {
+            "properties": {
+              "components": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 4,
+                "items": [
+                  { "type": "number", "minimum": 0, "exclusiveMaximum": 360 },
+                  { "type": "number", "minimum": 0, "maximum": 1 },
+                  { "type": "number", "minimum": 0, "maximum": 1 },
+                  { "type": "number", "minimum": 0, "maximum": 1 }
+                ],
+                "$comment": "HSL: [H (0–360), S (0–1), L (0–1), optional alpha (0–1)]"
+              }
+            }
+          }
+        }
+      ]
     },
     "Legibility": {
       "type": "object",
