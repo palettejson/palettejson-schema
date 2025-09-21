@@ -42,7 +42,14 @@
         },
         "colorSpace": {
           "type": "string",
-          "enum": ["DisplayP3", "Lab", "OKLCH", "sRGB", "sRGB-linear-extended"],
+          "enum": [
+            "DisplayP3",
+            "Lab",
+            "OKLCH",
+            "sRGB",
+            "sRGB-linear-extended",
+            "HSL"
+          ],
           "default": "sRGB",
           "$comment": "Applies only to colours using `components`. Entries with `hex` are always interpreted as display sRGB."
         },
@@ -252,6 +259,38 @@
                             "items": false
                           }
                         ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "colorSpace": { "const": "HSL" } } },
+          "then": {
+            "properties": {
+              "colors": {
+                "items": {
+                  "if": { "required": ["components"] },
+                  "then": {
+                    "properties": {
+                      "components": {
+                        "type": "array",
+                        "minItems": 3,
+                        "maxItems": 4,
+                        "items": [
+                          {
+                            "type": "number",
+                            "minimum": 0,
+                            "exclusiveMaximum": 360
+                          },
+                          { "type": "number", "minimum": 0, "maximum": 1 },
+                          { "type": "number", "minimum": 0, "maximum": 1 },
+                          { "type": "number", "minimum": 0, "maximum": 1 }
+                        ],
+                        "$comment": "HSL: [H (0–360), S (0–1), L (0–1), optional alpha (0–1)]"
                       }
                     }
                   }

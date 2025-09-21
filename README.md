@@ -51,7 +51,7 @@
     - `hex` (always display sRGB, `#RRGGBB` or `#RRGGBBAA`).
     - `components` (numeric array interpreted in the palette’s `colorSpace`).
   - Both may be present. If so, `components` are authoritative and `hex` is a preview / interop value.
-  - Supported `colorSpace` values: `sRGB`, `DisplayP3`, `Lab`, `OKLCH`, `sRGB-linear-extended`.
+  - Supported `colorSpace` values: `sRGB`, `DisplayP3`, `Lab`, `OKLCH`, `sRGB-linear-extended`, `HSL`.
   - Optional fields:
     - `id` (string identifier), `name`, `position`, `notes`.
     - `legibility` (luminance, contrast, preferred text).
@@ -79,6 +79,10 @@ These identifiers are recommendations for tooling and do not affect schema valid
 
 For converters, loaders, and utilities, see other repositories in the
 [PaletteJSON GitHub organisation](https://github.com/palettejson).
+
+## Documentation
+
+Complete documentation can be found at [palettejson.org](https://palettejson.org).
 
 ## Contributing
 
