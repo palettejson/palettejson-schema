@@ -1,0 +1,26 @@
+{
+  "name": "palettejson-schema",
+  "version": "0.1.0",
+  "description": "JSON Schema for PaletteJSON specification",
+  "main": "schema/v0.1/palettejson.schema.json",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "jest": "^29.7.0"
+  },
+  "keywords": [
+    "json-schema",
+    "color",
+    "palette",
+    "validation"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/palettejson/palettejson-schema.git"
+  }
+}
