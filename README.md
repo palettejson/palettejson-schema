@@ -45,13 +45,13 @@
 
 - **Palette object**:
   - `name`, `slug`, `type`, `colors[]` required.
-  - Optional fields: `description`, `version`, `author`, `license`, `tags`, `colorSpace`, `accessibility`, `aliases`.
+  - Optional fields: `description`, `version`, `author`, `license`, `tags`, `colorRepresentation`, `accessibility`, `aliases`.
 - **Colour object**:
   - Requires at least one of:
     - `hex` (always display sRGB, `#RRGGBB` or `#RRGGBBAA`).
-    - `components` (numeric array interpreted in the palette’s `colorSpace`).
+    - `components` (numeric array interpreted in the palette’s `colorRepresentation`).
   - Both may be present. If so, `components` are authoritative and `hex` is a preview / interop value.
-  - Supported `colorSpace` values: `sRGB`, `DisplayP3`, `Lab`, `OKLCH`, `sRGB-linear-extended`, `HSL`.
+  - Supported `colorRepresentation` values: `sRGB`, `DisplayP3`, `Lab`, `OKLCH`, `sRGB-linear-extended`, `HSL`.
   - Optional fields:
     - `id` (string identifier), `name`, `position`, `notes`.
     - `legibility` (luminance, contrast, preferred text).
@@ -74,7 +74,7 @@ These identifiers are recommendations for tooling and do not affect schema valid
 
 - [ ] v0.1 stabilisation
 - [ ] Gradients support
-- [ ] Additional colour space definitions
+- [ ] Additional colour representation definitions
 - [ ] Accessibility metadata refinements
 
 For converters, loaders, and utilities, see other repositories in the

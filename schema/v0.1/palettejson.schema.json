@@ -40,7 +40,7 @@
           "type": "string",
           "enum": ["categorical", "sequential", "diverging"]
         },
-        "colorSpace": {
+        "colorRepresentation": {
           "type": "string",
           "enum": [
             "DisplayP3",
@@ -51,7 +51,7 @@
             "HSL"
           ],
           "default": "sRGB",
-          "$comment": "Applies only to colours using `components`. Entries with `hex` are always interpreted as display sRGB."
+          "$comment": "Applies only to colors using `components`. Entries with `hex` are always interpreted as display sRGB."
         },
         "colors": {
           "type": "array",
@@ -108,7 +108,7 @@
               }
             }
           },
-          "$comment": "Consistency guard: if one colour has an explicit position, require all to have it."
+          "$comment": "Consistency guard: if one color has an explicit position, require all to have it."
         },
         {
           "if": {
@@ -118,10 +118,12 @@
               }
             }
           },
-          "then": { "required": ["colorSpace"] }
+          "then": { "required": ["colorRepresentation"] }
         },
         {
-          "if": { "properties": { "colorSpace": { "const": "DisplayP3" } } },
+          "if": {
+            "properties": { "colorRepresentation": { "const": "DisplayP3" } }
+          },
           "then": {
             "properties": {
               "colors": {
@@ -147,7 +149,7 @@
           }
         },
         {
-          "if": { "properties": { "colorSpace": { "const": "Lab" } } },
+          "if": { "properties": { "colorRepresentation": { "const": "Lab" } } },
           "then": {
             "properties": {
               "colors": {
@@ -174,7 +176,9 @@
           }
         },
         {
-          "if": { "properties": { "colorSpace": { "const": "OKLCH" } } },
+          "if": {
+            "properties": { "colorRepresentation": { "const": "OKLCH" } }
+          },
           "then": {
             "properties": {
               "colors": {
@@ -204,7 +208,9 @@
           }
         },
         {
-          "if": { "properties": { "colorSpace": { "const": "sRGB" } } },
+          "if": {
+            "properties": { "colorRepresentation": { "const": "sRGB" } }
+          },
           "then": {
             "properties": {
               "colors": {
@@ -231,7 +237,9 @@
         },
         {
           "if": {
-            "properties": { "colorSpace": { "const": "sRGB-linear-extended" } }
+            "properties": {
+              "colorRepresentation": { "const": "sRGB-linear-extended" }
+            }
           },
           "then": {
             "properties": {
@@ -268,7 +276,7 @@
           }
         },
         {
-          "if": { "properties": { "colorSpace": { "const": "HSL" } } },
+          "if": { "properties": { "colorRepresentation": { "const": "HSL" } } },
           "then": {
             "properties": {
               "colors": {
@@ -335,7 +343,7 @@
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
-                  "colorSpace": {
+                  "colorRepresentation": {
                     "type": "string",
                     "enum": [
                       "DisplayP3",
@@ -349,7 +357,7 @@
                   "components": { "type": "array" }
                 }
               },
-              { "$ref": "#/$defs/ColorSpaceValidation" }
+              { "$ref": "#/$defs/ColorRepresentationValidation" }
             ]
           }
         },
@@ -376,20 +384,22 @@
         "position": {
           "type": "integer",
           "minimum": 1,
-          "$comment": "1-based order index. If any colour in a palette has position, sort by it; use array order only as tiebreaker."
+          "$comment": "1-based order index. If any color in a palette has position, sort by it; use array order only as tiebreaker."
         },
         "notes": { "type": "string" },
         "legibility": { "$ref": "#/$defs/Legibility" }
       },
       "anyOf": [{ "required": ["hex"] }, { "required": ["components"] }]
     },
-    "ColorSpaceValidation": {
+    "ColorRepresentationValidation": {
       "type": "object",
-      "required": ["colorSpace", "components"],
-      "$comment": "Designed for self-contained colour entries (altRepresentations). Palette-level validation is intentionally separate, because colours there inherit colorSpace.",
+      "required": ["colorRepresentation", "components"],
+      "$comment": "Designed for self-contained color entries (altRepresentations). Palette-level validation is intentionally separate, because colors there inherit colorRepresentation.",
       "allOf": [
         {
-          "if": { "properties": { "colorSpace": { "const": "DisplayP3" } } },
+          "if": {
+            "properties": { "colorRepresentation": { "const": "DisplayP3" } }
+          },
           "then": {
             "properties": {
               "components": {
@@ -402,7 +412,7 @@
           }
         },
         {
-          "if": { "properties": { "colorSpace": { "const": "Lab" } } },
+          "if": { "properties": { "colorRepresentation": { "const": "Lab" } } },
           "then": {
             "properties": {
               "components": {
@@ -420,7 +430,9 @@
           }
         },
         {
-          "if": { "properties": { "colorSpace": { "const": "OKLCH" } } },
+          "if": {
+            "properties": { "colorRepresentation": { "const": "OKLCH" } }
+          },
           "then": {
             "properties": {
               "components": {
@@ -437,7 +449,9 @@
           }
         },
         {
-          "if": { "properties": { "colorSpace": { "const": "sRGB" } } },
+          "if": {
+            "properties": { "colorRepresentation": { "const": "sRGB" } }
+          },
           "then": {
             "properties": {
               "components": {
@@ -451,7 +465,9 @@
         },
         {
           "if": {
-            "properties": { "colorSpace": { "const": "sRGB-linear-extended" } }
+            "properties": {
+              "colorRepresentation": { "const": "sRGB-linear-extended" }
+            }
           },
           "then": {
             "properties": {
@@ -479,7 +495,7 @@
           }
         },
         {
-          "if": { "properties": { "colorSpace": { "const": "HSL" } } },
+          "if": { "properties": { "colorRepresentation": { "const": "HSL" } } },
           "then": {
             "properties": {
               "components": {
