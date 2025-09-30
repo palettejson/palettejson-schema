@@ -289,19 +289,25 @@
                             "type": "array",
                             "minItems": 3,
                             "maxItems": 3,
-                            "items": { "type": "number" }
+                            "items": [
+                              { "type": "number" },
+                              { "type": "number" },
+                              { "type": "number" }
+                            ]
                           },
                           {
                             "type": "array",
-                            "prefixItems": [
+                            "minItems": 4,
+                            "maxItems": 4,
+                            "items": [
                               { "type": "number" },
                               { "type": "number" },
                               { "type": "number" },
                               { "type": "number", "minimum": 0, "maximum": 1 }
-                            ],
-                            "items": false
+                            ]
                           }
-                        ]
+                        ],
+                        "$comment": "sRGB-linear-extended: R/G/B unbounded (supports HDR/negative for wide-gamut), optional alpha (0-1)"
                       }
                     }
                   }
@@ -561,19 +567,25 @@
                     "type": "array",
                     "minItems": 3,
                     "maxItems": 3,
-                    "items": { "type": "number" }
+                    "items": [
+                      { "type": "number" },
+                      { "type": "number" },
+                      { "type": "number" }
+                    ]
                   },
                   {
                     "type": "array",
-                    "prefixItems": [
+                    "minItems": 4,
+                    "maxItems": 4,
+                    "items": [
                       { "type": "number" },
                       { "type": "number" },
                       { "type": "number" },
                       { "type": "number", "minimum": 0, "maximum": 1 }
-                    ],
-                    "items": false
+                    ]
                   }
-                ]
+                ],
+                "$comment": "sRGB-linear-extended: R/G/B unbounded (supports HDR/negative for wide-gamut), optional alpha (0-1)"
               }
             }
           }
