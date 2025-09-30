@@ -1,6 +1,10 @@
 # Dependencies
 node_modules/
 
+# LLMs
+.claude/
+CLAUDE.md
+
 # npm
 package-lock.json
 

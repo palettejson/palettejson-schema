@@ -1,0 +1,1310 @@
+{
+  "$schema": "https://palettejson.org/schema/v0.1/palettejson.schema.json",
+  "specVersion": "0.1",
+  "palettes": [
+    {
+      "name": "Catppuccin Latte",
+      "slug": "catppuccin-latte",
+      "type": "categorical",
+      "author": {
+        "name": "Catppuccin",
+        "url": "https://catppuccin.com/"
+      },
+      "license": "MIT",
+      "tags": ["catppuccin", "latte", "theme", "ui"],
+      "colorRepresentation": "HSL",
+      "colors": [
+        {
+          "id": "rosewater",
+          "name": "Rosewater",
+          "hex": "#dc8a78",
+          "components": [11, 0.59, 0.67],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.8627, 0.5412, 0.4706]
+            }
+          ]
+        },
+        {
+          "id": "flamingo",
+          "name": "Flamingo",
+          "hex": "#dd7878",
+          "components": [0, 0.6, 0.67],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.8667, 0.4706, 0.4706]
+            }
+          ]
+        },
+        {
+          "id": "pink",
+          "name": "Pink",
+          "hex": "#ea76cb",
+          "components": [316, 0.73, 0.69],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9176, 0.4627, 0.7961]
+            }
+          ]
+        },
+        {
+          "id": "mauve",
+          "name": "Mauve",
+          "hex": "#8839ef",
+          "components": [266, 0.85, 0.58],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.5333, 0.2235, 0.9373]
+            }
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "hex": "#d20f39",
+          "components": [347, 0.87, 0.44],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.8235, 0.0588, 0.2235]
+            }
+          ]
+        },
+        {
+          "id": "maroon",
+          "name": "Maroon",
+          "hex": "#e64553",
+          "components": [355, 0.76, 0.59],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.902, 0.2706, 0.3255]
+            }
+          ]
+        },
+        {
+          "id": "peach",
+          "name": "Peach",
+          "hex": "#fe640b",
+          "components": [22, 0.99, 0.52],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9961, 0.3922, 0.0431]
+            }
+          ]
+        },
+        {
+          "id": "yellow",
+          "name": "Yellow",
+          "hex": "#df8e1d",
+          "components": [35, 0.77, 0.49],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.8745, 0.5569, 0.1137]
+            }
+          ]
+        },
+        {
+          "id": "green",
+          "name": "Green",
+          "hex": "#40a02b",
+          "components": [109, 0.58, 0.4],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.251, 0.6275, 0.1686]
+            }
+          ]
+        },
+        {
+          "id": "teal",
+          "name": "Teal",
+          "hex": "#179299",
+          "components": [183, 0.74, 0.35],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.0902, 0.5725, 0.6]
+            }
+          ]
+        },
+        {
+          "id": "sky",
+          "name": "Sky",
+          "hex": "#04a5e5",
+          "components": [197, 0.97, 0.46],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.0157, 0.6471, 0.898]
+            }
+          ]
+        },
+        {
+          "id": "sapphire",
+          "name": "Sapphire",
+          "hex": "#209fb5",
+          "components": [189, 0.7, 0.42],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.1255, 0.6235, 0.7098]
+            }
+          ]
+        },
+        {
+          "id": "blue",
+          "name": "Blue",
+          "hex": "#1e66f5",
+          "components": [220, 0.91, 0.54],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.1176, 0.4, 0.9608]
+            }
+          ]
+        },
+        {
+          "id": "lavender",
+          "name": "Lavender",
+          "hex": "#7287fd",
+          "components": [231, 0.97, 0.72],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.4471, 0.5294, 0.9922]
+            }
+          ]
+        },
+        {
+          "id": "text",
+          "name": "Text",
+          "hex": "#4c4f69",
+          "components": [234, 0.16, 0.35],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.298, 0.3098, 0.4118]
+            }
+          ]
+        },
+        {
+          "id": "subtext1",
+          "name": "Subtext 1",
+          "hex": "#5c5f77",
+          "components": [233, 0.13, 0.41],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.3608, 0.3725, 0.4667]
+            }
+          ]
+        },
+        {
+          "id": "subtext0",
+          "name": "Subtext 0",
+          "hex": "#6c6f85",
+          "components": [233, 0.1, 0.47],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.4235, 0.4353, 0.5216]
+            }
+          ]
+        },
+        {
+          "id": "overlay2",
+          "name": "Overlay 2",
+          "hex": "#7c7f93",
+          "components": [232, 0.1, 0.53],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.4863, 0.498, 0.5765]
+            }
+          ]
+        },
+        {
+          "id": "overlay1",
+          "name": "Overlay 1",
+          "hex": "#8c8fa1",
+          "components": [231, 0.1, 0.59],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.549, 0.5608, 0.6314]
+            }
+          ]
+        },
+        {
+          "id": "overlay0",
+          "name": "Overlay 0",
+          "hex": "#9ca0b0",
+          "components": [228, 0.11, 0.65],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.6118, 0.6275, 0.6902]
+            }
+          ]
+        },
+        {
+          "id": "surface2",
+          "name": "Surface 2",
+          "hex": "#acb0be",
+          "components": [227, 0.12, 0.71],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.6745, 0.6902, 0.7451]
+            }
+          ]
+        },
+        {
+          "id": "surface1",
+          "name": "Surface 1",
+          "hex": "#bcc0cc",
+          "components": [225, 0.14, 0.77],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.7373, 0.7529, 0.8]
+            }
+          ]
+        },
+        {
+          "id": "surface0",
+          "name": "Surface 0",
+          "hex": "#ccd0da",
+          "components": [223, 0.16, 0.83],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.8, 0.8157, 0.8549]
+            }
+          ]
+        },
+        {
+          "id": "base",
+          "name": "Base",
+          "hex": "#eff1f5",
+          "components": [220, 0.23, 0.95],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9373, 0.9451, 0.9608]
+            }
+          ]
+        },
+        {
+          "id": "mantle",
+          "name": "Mantle",
+          "hex": "#e6e9ef",
+          "components": [220, 0.22, 0.92],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.902, 0.9137, 0.9373]
+            }
+          ]
+        },
+        {
+          "id": "crust",
+          "name": "Crust",
+          "hex": "#dce0e8",
+          "components": [220, 0.21, 0.89],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.8627, 0.8784, 0.9098]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Catppuccin Frappé",
+      "slug": "catppuccin-frappe",
+      "type": "categorical",
+      "author": {
+        "name": "Catppuccin",
+        "url": "https://catppuccin.com/"
+      },
+      "license": "MIT",
+      "tags": ["catppuccin", "frappe", "theme", "ui"],
+      "colorRepresentation": "HSL",
+      "colors": [
+        {
+          "id": "rosewater",
+          "name": "Rosewater",
+          "hex": "#f2d5cf",
+          "components": [10, 0.57, 0.88],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.949, 0.8353, 0.8118]
+            }
+          ]
+        },
+        {
+          "id": "flamingo",
+          "name": "Flamingo",
+          "hex": "#eebebe",
+          "components": [0, 0.59, 0.84],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9333, 0.7451, 0.7451]
+            }
+          ]
+        },
+        {
+          "id": "pink",
+          "name": "Pink",
+          "hex": "#f4b8e4",
+          "components": [316, 0.73, 0.84],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9569, 0.7216, 0.8941]
+            }
+          ]
+        },
+        {
+          "id": "mauve",
+          "name": "Mauve",
+          "hex": "#ca9ee6",
+          "components": [277, 0.59, 0.76],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.7922, 0.6196, 0.902]
+            }
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "hex": "#e78284",
+          "components": [359, 0.68, 0.71],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9059, 0.5098, 0.5176]
+            }
+          ]
+        },
+        {
+          "id": "maroon",
+          "name": "Maroon",
+          "hex": "#ea999c",
+          "components": [358, 0.66, 0.76],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9176, 0.6, 0.6118]
+            }
+          ]
+        },
+        {
+          "id": "peach",
+          "name": "Peach",
+          "hex": "#ef9f76",
+          "components": [20, 0.79, 0.7],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9373, 0.6235, 0.4627]
+            }
+          ]
+        },
+        {
+          "id": "yellow",
+          "name": "Yellow",
+          "hex": "#e5c890",
+          "components": [40, 0.62, 0.73],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.898, 0.7843, 0.5647]
+            }
+          ]
+        },
+        {
+          "id": "green",
+          "name": "Green",
+          "hex": "#a6d189",
+          "components": [96, 0.44, 0.68],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.651, 0.8196, 0.5373]
+            }
+          ]
+        },
+        {
+          "id": "teal",
+          "name": "Teal",
+          "hex": "#81c8be",
+          "components": [172, 0.39, 0.65],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.5059, 0.7843, 0.7451]
+            }
+          ]
+        },
+        {
+          "id": "sky",
+          "name": "Sky",
+          "hex": "#99d1db",
+          "components": [189, 0.48, 0.73],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.6, 0.8196, 0.8588]
+            }
+          ]
+        },
+        {
+          "id": "sapphire",
+          "name": "Sapphire",
+          "hex": "#85c1dc",
+          "components": [199, 0.55, 0.69],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.5216, 0.7569, 0.8627]
+            }
+          ]
+        },
+        {
+          "id": "blue",
+          "name": "Blue",
+          "hex": "#8caaee",
+          "components": [222, 0.74, 0.74],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.549, 0.6667, 0.9333]
+            }
+          ]
+        },
+        {
+          "id": "lavender",
+          "name": "Lavender",
+          "hex": "#babbf1",
+          "components": [239, 0.66, 0.84],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.7294, 0.7333, 0.9451]
+            }
+          ]
+        },
+        {
+          "id": "text",
+          "name": "Text",
+          "hex": "#c6d0f5",
+          "components": [227, 0.7, 0.87],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.7765, 0.8157, 0.9608]
+            }
+          ]
+        },
+        {
+          "id": "subtext1",
+          "name": "Subtext 1",
+          "hex": "#b5bfe2",
+          "components": [227, 0.44, 0.8],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.7098, 0.749, 0.8863]
+            }
+          ]
+        },
+        {
+          "id": "subtext0",
+          "name": "Subtext 0",
+          "hex": "#a5adce",
+          "components": [228, 0.29, 0.73],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.6471, 0.6784, 0.8078]
+            }
+          ]
+        },
+        {
+          "id": "overlay2",
+          "name": "Overlay 2",
+          "hex": "#949cbb",
+          "components": [228, 0.22, 0.66],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.5804, 0.6118, 0.7333]
+            }
+          ]
+        },
+        {
+          "id": "overlay1",
+          "name": "Overlay 1",
+          "hex": "#838ba7",
+          "components": [227, 0.17, 0.58],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.5137, 0.5451, 0.6549]
+            }
+          ]
+        },
+        {
+          "id": "overlay0",
+          "name": "Overlay 0",
+          "hex": "#737994",
+          "components": [229, 0.13, 0.52],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.451, 0.4745, 0.5804]
+            }
+          ]
+        },
+        {
+          "id": "surface2",
+          "name": "Surface 2",
+          "hex": "#626880",
+          "components": [228, 0.13, 0.44],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.3843, 0.4078, 0.502]
+            }
+          ]
+        },
+        {
+          "id": "surface1",
+          "name": "Surface 1",
+          "hex": "#51576d",
+          "components": [227, 0.15, 0.37],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.3176, 0.3412, 0.4275]
+            }
+          ]
+        },
+        {
+          "id": "surface0",
+          "name": "Surface 0",
+          "hex": "#414559",
+          "components": [230, 0.16, 0.3],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.2549, 0.2706, 0.349]
+            }
+          ]
+        },
+        {
+          "id": "base",
+          "name": "Base",
+          "hex": "#303446",
+          "components": [229, 0.19, 0.23],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.1882, 0.2039, 0.2745]
+            }
+          ]
+        },
+        {
+          "id": "mantle",
+          "name": "Mantle",
+          "hex": "#292c3c",
+          "components": [231, 0.19, 0.2],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.1608, 0.1725, 0.2353]
+            }
+          ]
+        },
+        {
+          "id": "crust",
+          "name": "Crust",
+          "hex": "#232634",
+          "components": [229, 0.2, 0.17],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.1373, 0.149, 0.2039]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Catppuccin Macchiato",
+      "slug": "catppuccin-macchiato",
+      "type": "categorical",
+      "author": {
+        "name": "Catppuccin",
+        "url": "https://catppuccin.com/"
+      },
+      "license": "MIT",
+      "tags": ["catppuccin", "macchiato", "theme", "ui"],
+      "colorRepresentation": "HSL",
+      "colors": [
+        {
+          "id": "rosewater",
+          "name": "Rosewater",
+          "hex": "#f4dbd6",
+          "components": [10, 0.58, 0.9],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9569, 0.8588, 0.8392]
+            }
+          ]
+        },
+        {
+          "id": "flamingo",
+          "name": "Flamingo",
+          "hex": "#f0c6c6",
+          "components": [0, 0.58, 0.86],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9412, 0.7765, 0.7765]
+            }
+          ]
+        },
+        {
+          "id": "pink",
+          "name": "Pink",
+          "hex": "#f5bde6",
+          "components": [316, 0.74, 0.85],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9608, 0.7412, 0.902]
+            }
+          ]
+        },
+        {
+          "id": "mauve",
+          "name": "Mauve",
+          "hex": "#c6a0f6",
+          "components": [267, 0.83, 0.8],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.7765, 0.6275, 0.9647]
+            }
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "hex": "#ed8796",
+          "components": [351, 0.74, 0.73],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9294, 0.5294, 0.5882]
+            }
+          ]
+        },
+        {
+          "id": "maroon",
+          "name": "Maroon",
+          "hex": "#ee99a0",
+          "components": [355, 0.71, 0.77],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9333, 0.6, 0.6275]
+            }
+          ]
+        },
+        {
+          "id": "peach",
+          "name": "Peach",
+          "hex": "#f5a97f",
+          "components": [21, 0.86, 0.73],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9608, 0.6627, 0.498]
+            }
+          ]
+        },
+        {
+          "id": "yellow",
+          "name": "Yellow",
+          "hex": "#eed49f",
+          "components": [40, 0.7, 0.78],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9333, 0.8314, 0.6235]
+            }
+          ]
+        },
+        {
+          "id": "green",
+          "name": "Green",
+          "hex": "#a6da95",
+          "components": [105, 0.48, 0.72],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.651, 0.8549, 0.5843]
+            }
+          ]
+        },
+        {
+          "id": "teal",
+          "name": "Teal",
+          "hex": "#8bd5ca",
+          "components": [171, 0.47, 0.69],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.5451, 0.8353, 0.7922]
+            }
+          ]
+        },
+        {
+          "id": "sky",
+          "name": "Sky",
+          "hex": "#91d7e3",
+          "components": [189, 0.59, 0.73],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.5686, 0.8431, 0.8902]
+            }
+          ]
+        },
+        {
+          "id": "sapphire",
+          "name": "Sapphire",
+          "hex": "#7dc4e4",
+          "components": [199, 0.66, 0.69],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.4902, 0.7686, 0.8941]
+            }
+          ]
+        },
+        {
+          "id": "blue",
+          "name": "Blue",
+          "hex": "#8aadf4",
+          "components": [220, 0.83, 0.75],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.5412, 0.6784, 0.9569]
+            }
+          ]
+        },
+        {
+          "id": "lavender",
+          "name": "Lavender",
+          "hex": "#b7bdf8",
+          "components": [234, 0.82, 0.85],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.7176, 0.7412, 0.9725]
+            }
+          ]
+        },
+        {
+          "id": "text",
+          "name": "Text",
+          "hex": "#cad3f5",
+          "components": [227, 0.68, 0.88],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.7922, 0.8275, 0.9608]
+            }
+          ]
+        },
+        {
+          "id": "subtext1",
+          "name": "Subtext 1",
+          "hex": "#b8c0e0",
+          "components": [228, 0.39, 0.8],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.7216, 0.7529, 0.8784]
+            }
+          ]
+        },
+        {
+          "id": "subtext0",
+          "name": "Subtext 0",
+          "hex": "#a5adcb",
+          "components": [227, 0.27, 0.72],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.6471, 0.6784, 0.7961]
+            }
+          ]
+        },
+        {
+          "id": "overlay2",
+          "name": "Overlay 2",
+          "hex": "#939ab7",
+          "components": [228, 0.2, 0.65],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.5765, 0.6039, 0.7176]
+            }
+          ]
+        },
+        {
+          "id": "overlay1",
+          "name": "Overlay 1",
+          "hex": "#8087a2",
+          "components": [228, 0.15, 0.57],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.502, 0.5294, 0.6353]
+            }
+          ]
+        },
+        {
+          "id": "overlay0",
+          "name": "Overlay 0",
+          "hex": "#6e738d",
+          "components": [230, 0.12, 0.49],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.4314, 0.451, 0.5529]
+            }
+          ]
+        },
+        {
+          "id": "surface2",
+          "name": "Surface 2",
+          "hex": "#5b6078",
+          "components": [230, 0.14, 0.41],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.3569, 0.3765, 0.4706]
+            }
+          ]
+        },
+        {
+          "id": "surface1",
+          "name": "Surface 1",
+          "hex": "#494d64",
+          "components": [231, 0.16, 0.34],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.2863, 0.302, 0.3922]
+            }
+          ]
+        },
+        {
+          "id": "surface0",
+          "name": "Surface 0",
+          "hex": "#363a4f",
+          "components": [230, 0.19, 0.26],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.2118, 0.2275, 0.3098]
+            }
+          ]
+        },
+        {
+          "id": "base",
+          "name": "Base",
+          "hex": "#24273a",
+          "components": [232, 0.23, 0.18],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.1412, 0.1529, 0.2275]
+            }
+          ]
+        },
+        {
+          "id": "mantle",
+          "name": "Mantle",
+          "hex": "#1e2030",
+          "components": [233, 0.23, 0.15],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.1176, 0.1255, 0.1882]
+            }
+          ]
+        },
+        {
+          "id": "crust",
+          "name": "Crust",
+          "hex": "#181926",
+          "components": [236, 0.23, 0.12],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.0941, 0.098, 0.149]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Catppuccin Mocha",
+      "slug": "catppuccin-mocha",
+      "type": "categorical",
+      "author": {
+        "name": "Catppuccin",
+        "url": "https://catppuccin.com/"
+      },
+      "license": "MIT",
+      "tags": ["catppuccin", "mocha", "theme", "ui"],
+      "colorRepresentation": "HSL",
+      "colors": [
+        {
+          "id": "rosewater",
+          "name": "Rosewater",
+          "hex": "#f5e0dc",
+          "components": [10, 0.56, 0.91],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9608, 0.8784, 0.8627]
+            }
+          ]
+        },
+        {
+          "id": "flamingo",
+          "name": "Flamingo",
+          "hex": "#f2cdcd",
+          "components": [0, 0.59, 0.88],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.949, 0.8039, 0.8039]
+            }
+          ]
+        },
+        {
+          "id": "pink",
+          "name": "Pink",
+          "hex": "#f5c2e7",
+          "components": [316, 0.72, 0.86],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9608, 0.7608, 0.9059]
+            }
+          ]
+        },
+        {
+          "id": "mauve",
+          "name": "Mauve",
+          "hex": "#cba6f7",
+          "components": [267, 0.84, 0.81],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.7961, 0.651, 0.9686]
+            }
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "hex": "#f38ba8",
+          "components": [343, 0.81, 0.75],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9529, 0.5451, 0.6588]
+            }
+          ]
+        },
+        {
+          "id": "maroon",
+          "name": "Maroon",
+          "hex": "#eba0ac",
+          "components": [350, 0.65, 0.79],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9216, 0.6275, 0.6745]
+            }
+          ]
+        },
+        {
+          "id": "peach",
+          "name": "Peach",
+          "hex": "#fab387",
+          "components": [23, 0.92, 0.75],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9804, 0.702, 0.5294]
+            }
+          ]
+        },
+        {
+          "id": "yellow",
+          "name": "Yellow",
+          "hex": "#f9e2af",
+          "components": [41, 0.86, 0.83],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.9765, 0.8863, 0.6863]
+            }
+          ]
+        },
+        {
+          "id": "green",
+          "name": "Green",
+          "hex": "#a6e3a1",
+          "components": [115, 0.54, 0.76],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.651, 0.8902, 0.6314]
+            }
+          ]
+        },
+        {
+          "id": "teal",
+          "name": "Teal",
+          "hex": "#94e2d5",
+          "components": [170, 0.57, 0.73],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.5804, 0.8863, 0.8353]
+            }
+          ]
+        },
+        {
+          "id": "sky",
+          "name": "Sky",
+          "hex": "#89dceb",
+          "components": [189, 0.71, 0.73],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.5373, 0.8627, 0.9216]
+            }
+          ]
+        },
+        {
+          "id": "sapphire",
+          "name": "Sapphire",
+          "hex": "#74c7ec",
+          "components": [199, 0.76, 0.69],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.4549, 0.7804, 0.9255]
+            }
+          ]
+        },
+        {
+          "id": "blue",
+          "name": "Blue",
+          "hex": "#89b4fa",
+          "components": [217, 0.92, 0.76],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.5373, 0.7059, 0.9804]
+            }
+          ]
+        },
+        {
+          "id": "lavender",
+          "name": "Lavender",
+          "hex": "#b4befe",
+          "components": [232, 0.97, 0.85],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.7059, 0.7451, 0.9961]
+            }
+          ]
+        },
+        {
+          "id": "text",
+          "name": "Text",
+          "hex": "#cdd6f4",
+          "components": [226, 0.64, 0.88],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.8039, 0.8392, 0.9569]
+            }
+          ]
+        },
+        {
+          "id": "subtext1",
+          "name": "Subtext 1",
+          "hex": "#bac2de",
+          "components": [227, 0.35, 0.82],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.7294, 0.7608, 0.8706]
+            }
+          ]
+        },
+        {
+          "id": "subtext0",
+          "name": "Subtext 0",
+          "hex": "#a6adc8",
+          "components": [228, 0.24, 0.72],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.651, 0.6784, 0.7843]
+            }
+          ]
+        },
+        {
+          "id": "overlay2",
+          "name": "Overlay 2",
+          "hex": "#9399b2",
+          "components": [228, 0.17, 0.64],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.5765, 0.6, 0.698]
+            }
+          ]
+        },
+        {
+          "id": "overlay1",
+          "name": "Overlay 1",
+          "hex": "#7f849c",
+          "components": [230, 0.13, 0.55],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.498, 0.5176, 0.6118]
+            }
+          ]
+        },
+        {
+          "id": "overlay0",
+          "name": "Overlay 0",
+          "hex": "#6c7086",
+          "components": [231, 0.11, 0.47],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.4235, 0.4392, 0.5255]
+            }
+          ]
+        },
+        {
+          "id": "surface2",
+          "name": "Surface 2",
+          "hex": "#585b70",
+          "components": [233, 0.12, 0.39],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.3451, 0.3569, 0.4392]
+            }
+          ]
+        },
+        {
+          "id": "surface1",
+          "name": "Surface 1",
+          "hex": "#45475a",
+          "components": [234, 0.13, 0.31],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.2706, 0.2784, 0.3529]
+            }
+          ]
+        },
+        {
+          "id": "surface0",
+          "name": "Surface 0",
+          "hex": "#313244",
+          "components": [237, 0.16, 0.23],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.1922, 0.1961, 0.2667]
+            }
+          ]
+        },
+        {
+          "id": "base",
+          "name": "Base",
+          "hex": "#1e1e2e",
+          "components": [240, 0.21, 0.15],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.1176, 0.1176, 0.1804]
+            }
+          ]
+        },
+        {
+          "id": "mantle",
+          "name": "Mantle",
+          "hex": "#181825",
+          "components": [240, 0.21, 0.1],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.0941, 0.0941, 0.1451]
+            }
+          ]
+        },
+        {
+          "id": "crust",
+          "name": "Crust",
+          "hex": "#11111b",
+          "components": [240, 0.23, 0.09],
+          "altRepresentations": [
+            {
+              "colorRepresentation": "sRGB",
+              "components": [0.0667, 0.0667, 0.1059]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

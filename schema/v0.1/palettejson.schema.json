@@ -158,15 +158,30 @@
                   "then": {
                     "properties": {
                       "components": {
-                        "type": "array",
-                        "minItems": 3,
-                        "maxItems": 3,
-                        "items": [
-                          { "type": "number", "minimum": 0, "maximum": 100 },
-                          { "type": "number" },
-                          { "type": "number" }
+                        "oneOf": [
+                          {
+                            "type": "array",
+                            "minItems": 3,
+                            "maxItems": 3,
+                            "items": [
+                              { "type": "number", "minimum": 0, "maximum": 100 },
+                              { "type": "number" },
+                              { "type": "number" }
+                            ]
+                          },
+                          {
+                            "type": "array",
+                            "minItems": 4,
+                            "maxItems": 4,
+                            "items": [
+                              { "type": "number", "minimum": 0, "maximum": 100 },
+                              { "type": "number" },
+                              { "type": "number" },
+                              { "type": "number", "minimum": 0, "maximum": 1 }
+                            ]
+                          }
                         ],
-                        "$comment": "Lab: Only L is hard-clamped (0..100). a/b are unbounded here; use linter warnings for suspicious magnitudes."
+                        "$comment": "Lab: L (0-100), a/b unbounded, optional alpha (0-1). D50 illuminant per CSS Color Module 4."
                       }
                     }
                   }
@@ -187,18 +202,38 @@
                   "then": {
                     "properties": {
                       "components": {
-                        "type": "array",
-                        "minItems": 3,
-                        "maxItems": 3,
-                        "items": [
-                          { "type": "number", "minimum": 0, "maximum": 1 },
-                          { "type": "number", "minimum": 0 },
+                        "oneOf": [
                           {
-                            "type": "number",
-                            "minimum": 0,
-                            "exclusiveMaximum": 360
+                            "type": "array",
+                            "minItems": 3,
+                            "maxItems": 3,
+                            "items": [
+                              { "type": "number", "minimum": 0, "maximum": 1 },
+                              { "type": "number", "minimum": 0 },
+                              {
+                                "type": "number",
+                                "minimum": 0,
+                                "exclusiveMaximum": 360
+                              }
+                            ]
+                          },
+                          {
+                            "type": "array",
+                            "minItems": 4,
+                            "maxItems": 4,
+                            "items": [
+                              { "type": "number", "minimum": 0, "maximum": 1 },
+                              { "type": "number", "minimum": 0 },
+                              {
+                                "type": "number",
+                                "minimum": 0,
+                                "exclusiveMaximum": 360
+                              },
+                              { "type": "number", "minimum": 0, "maximum": 1 }
+                            ]
                           }
-                        ]
+                        ],
+                        "$comment": "OKLCH: L (0-1), C (≥0), H (0-360), optional alpha (0-1)"
                       }
                     }
                   }
@@ -285,20 +320,38 @@
                   "then": {
                     "properties": {
                       "components": {
-                        "type": "array",
-                        "minItems": 3,
-                        "maxItems": 4,
-                        "items": [
+                        "oneOf": [
                           {
-                            "type": "number",
-                            "minimum": 0,
-                            "exclusiveMaximum": 360
+                            "type": "array",
+                            "minItems": 3,
+                            "maxItems": 3,
+                            "items": [
+                              {
+                                "type": "number",
+                                "minimum": 0,
+                                "exclusiveMaximum": 360
+                              },
+                              { "type": "number", "minimum": 0, "maximum": 1 },
+                              { "type": "number", "minimum": 0, "maximum": 1 }
+                            ]
                           },
-                          { "type": "number", "minimum": 0, "maximum": 1 },
-                          { "type": "number", "minimum": 0, "maximum": 1 },
-                          { "type": "number", "minimum": 0, "maximum": 1 }
+                          {
+                            "type": "array",
+                            "minItems": 4,
+                            "maxItems": 4,
+                            "items": [
+                              {
+                                "type": "number",
+                                "minimum": 0,
+                                "exclusiveMaximum": 360
+                              },
+                              { "type": "number", "minimum": 0, "maximum": 1 },
+                              { "type": "number", "minimum": 0, "maximum": 1 },
+                              { "type": "number", "minimum": 0, "maximum": 1 }
+                            ]
+                          }
                         ],
-                        "$comment": "HSL: [H (0–360), S (0–1), L (0–1), optional alpha (0–1)]"
+                        "$comment": "HSL: H (0-360), S (0-1), L (0-1), optional alpha (0-1)"
                       }
                     }
                   }
@@ -416,15 +469,30 @@
           "then": {
             "properties": {
               "components": {
-                "type": "array",
-                "minItems": 3,
-                "maxItems": 3,
-                "items": [
-                  { "type": "number", "minimum": 0, "maximum": 100 },
-                  { "type": "number" },
-                  { "type": "number" }
+                "oneOf": [
+                  {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 3,
+                    "items": [
+                      { "type": "number", "minimum": 0, "maximum": 100 },
+                      { "type": "number" },
+                      { "type": "number" }
+                    ]
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 4,
+                    "maxItems": 4,
+                    "items": [
+                      { "type": "number", "minimum": 0, "maximum": 100 },
+                      { "type": "number" },
+                      { "type": "number" },
+                      { "type": "number", "minimum": 0, "maximum": 1 }
+                    ]
+                  }
                 ],
-                "$comment": "Lab: L (0..100), a/b unbounded (linters may warn on magnitude)."
+                "$comment": "Lab: L (0-100), a/b unbounded, optional alpha (0-1). D50 illuminant per CSS Color Module 4."
               }
             }
           }
@@ -436,14 +504,30 @@
           "then": {
             "properties": {
               "components": {
-                "type": "array",
-                "minItems": 3,
-                "maxItems": 3,
-                "items": [
-                  { "type": "number", "minimum": 0, "maximum": 1 },
-                  { "type": "number", "minimum": 0 },
-                  { "type": "number", "minimum": 0, "exclusiveMaximum": 360 }
-                ]
+                "oneOf": [
+                  {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 3,
+                    "items": [
+                      { "type": "number", "minimum": 0, "maximum": 1 },
+                      { "type": "number", "minimum": 0 },
+                      { "type": "number", "minimum": 0, "exclusiveMaximum": 360 }
+                    ]
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 4,
+                    "maxItems": 4,
+                    "items": [
+                      { "type": "number", "minimum": 0, "maximum": 1 },
+                      { "type": "number", "minimum": 0 },
+                      { "type": "number", "minimum": 0, "exclusiveMaximum": 360 },
+                      { "type": "number", "minimum": 0, "maximum": 1 }
+                    ]
+                  }
+                ],
+                "$comment": "OKLCH: L (0-1), C (≥0), H (0-360), optional alpha (0-1)"
               }
             }
           }
@@ -499,16 +583,30 @@
           "then": {
             "properties": {
               "components": {
-                "type": "array",
-                "minItems": 3,
-                "maxItems": 4,
-                "items": [
-                  { "type": "number", "minimum": 0, "exclusiveMaximum": 360 },
-                  { "type": "number", "minimum": 0, "maximum": 1 },
-                  { "type": "number", "minimum": 0, "maximum": 1 },
-                  { "type": "number", "minimum": 0, "maximum": 1 }
+                "oneOf": [
+                  {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 3,
+                    "items": [
+                      { "type": "number", "minimum": 0, "exclusiveMaximum": 360 },
+                      { "type": "number", "minimum": 0, "maximum": 1 },
+                      { "type": "number", "minimum": 0, "maximum": 1 }
+                    ]
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 4,
+                    "maxItems": 4,
+                    "items": [
+                      { "type": "number", "minimum": 0, "exclusiveMaximum": 360 },
+                      { "type": "number", "minimum": 0, "maximum": 1 },
+                      { "type": "number", "minimum": 0, "maximum": 1 },
+                      { "type": "number", "minimum": 0, "maximum": 1 }
+                    ]
+                  }
                 ],
-                "$comment": "HSL: [H (0–360), S (0–1), L (0–1), optional alpha (0–1)]"
+                "$comment": "HSL: H (0-360), S (0-1), L (0-1), optional alpha (0-1)"
               }
             }
           }
