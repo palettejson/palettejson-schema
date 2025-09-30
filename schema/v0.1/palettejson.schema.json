@@ -630,8 +630,18 @@
       "additionalProperties": false,
       "properties": {
         "luminance": { "type": "number", "minimum": 0, "maximum": 1 },
-        "contrastVsWhite": { "type": "number", "minimum": 1 },
-        "contrastVsBlack": { "type": "number", "minimum": 1 },
+        "contrastVsWhite": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 21,
+          "description": "WCAG 2.x contrast ratio (1:1 to 21:1) against white (#FFFFFF, sRGB)"
+        },
+        "contrastVsBlack": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 21,
+          "description": "WCAG 2.x contrast ratio (1:1 to 21:1) against black (#000000, sRGB)"
+        },
         "preferredText": { "type": "string", "enum": ["light", "dark"] }
       }
     }
