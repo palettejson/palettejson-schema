@@ -1,0 +1,164 @@
+{
+  "palettes": [
+    {
+      "name": "Vintage Corporate Color Scheme",
+      "slug": "vintage-corporate",
+      "description": "A heritage corporate color palette featuring Elegant Purple as the primary brand color (used without variants), plus four supporting color families (grey, ochre, green, orange) each with tonal variants. Demonstrates mixing standalone colors with grouped color families.",
+      "version": "1.0.0",
+      "type": "categorical",
+      "colorRepresentation": "sRGB",
+      "colors": [
+        {
+          "id": "elegant-purple",
+          "name": "Elegant Purple",
+          "hex": "#660066",
+          "components": [0.4, 0, 0.4],
+          "position": 1,
+          "notes": "Primary brand color - always used at full strength, no variants"
+        },
+        {
+          "id": "cool-dark-grey",
+          "name": "Cool Dark Grey",
+          "hex": "#4D4F53",
+          "components": [0.302, 0.31, 0.325],
+          "position": 2,
+          "groupId": "grey-family",
+          "referenceInGroup": true,
+          "notes": "Primary brand grey - core identity color"
+        },
+        {
+          "id": "grey-frame",
+          "name": "Grey Frame",
+          "hex": "#8B8C8F",
+          "components": [0.545, 0.549, 0.561],
+          "position": 3,
+          "groupId": "grey-family",
+          "notes": "Frame color for objects"
+        },
+        {
+          "id": "grey-bar",
+          "name": "Grey Bar",
+          "hex": "#C5C6C6",
+          "components": [0.773, 0.776, 0.776],
+          "position": 4,
+          "groupId": "grey-family",
+          "notes": "Bar color"
+        },
+        {
+          "id": "grey-background",
+          "name": "Grey Background",
+          "hex": "#EDEDED",
+          "components": [0.929, 0.929, 0.929],
+          "position": 5,
+          "groupId": "grey-family",
+          "notes": "Background color for diagrams"
+        },
+        {
+          "id": "green-ochre",
+          "name": "Green Ochre",
+          "hex": "#B49602",
+          "components": [0.706, 0.588, 0.008],
+          "position": 6,
+          "groupId": "ochre-family",
+          "referenceInGroup": true,
+          "notes": "Primary brand ochre - warm accent color"
+        },
+        {
+          "id": "ochre-tint-1",
+          "name": "Ochre Tint 1",
+          "hex": "#D6C674",
+          "components": [0.839, 0.776, 0.455],
+          "position": 7,
+          "groupId": "ochre-family"
+        },
+        {
+          "id": "ochre-tint-2",
+          "name": "Ochre Tint 2",
+          "hex": "#EFEBCC",
+          "components": [0.937, 0.922, 0.8],
+          "position": 8,
+          "groupId": "ochre-family"
+        },
+        {
+          "id": "ochre-background",
+          "name": "Ochre Background",
+          "hex": "#F7F4E5",
+          "components": [0.969, 0.957, 0.898],
+          "position": 9,
+          "groupId": "ochre-family",
+          "notes": "Background color for diagrams"
+        },
+        {
+          "id": "evergreen",
+          "name": "Evergreen",
+          "hex": "#006037",
+          "components": [0, 0.376, 0.216],
+          "position": 10,
+          "groupId": "green-family",
+          "referenceInGroup": true,
+          "notes": "Primary brand green - natural accent color"
+        },
+        {
+          "id": "green-tint-1",
+          "name": "Green Tint 1",
+          "hex": "#73A891",
+          "components": [0.451, 0.659, 0.569],
+          "position": 11,
+          "groupId": "green-family"
+        },
+        {
+          "id": "green-tint-2",
+          "name": "Green Tint 2",
+          "hex": "#CCDFD7",
+          "components": [0.8, 0.875, 0.843],
+          "position": 12,
+          "groupId": "green-family"
+        },
+        {
+          "id": "green-background",
+          "name": "Green Background",
+          "hex": "#E5EFEB",
+          "components": [0.898, 0.937, 0.922],
+          "position": 13,
+          "groupId": "green-family",
+          "notes": "Background color for diagrams"
+        },
+        {
+          "id": "tangerine",
+          "name": "Tangerine",
+          "hex": "#FF6600",
+          "components": [1, 0.4, 0],
+          "position": 14,
+          "groupId": "orange-family",
+          "referenceInGroup": true,
+          "notes": "Primary brand orange - vibrant accent color"
+        },
+        {
+          "id": "orange-tint-1",
+          "name": "Orange Tint 1",
+          "hex": "#FFAB73",
+          "components": [1, 0.671, 0.451],
+          "position": 15,
+          "groupId": "orange-family"
+        },
+        {
+          "id": "orange-tint-2",
+          "name": "Orange Tint 2",
+          "hex": "#FFE0CC",
+          "components": [1, 0.878, 0.8],
+          "position": 16,
+          "groupId": "orange-family"
+        },
+        {
+          "id": "orange-background",
+          "name": "Orange Background",
+          "hex": "#FFEFE5",
+          "components": [1, 0.937, 0.898],
+          "position": 17,
+          "groupId": "orange-family",
+          "notes": "Background color for diagrams"
+        }
+      ]
+    }
+  ]
+}

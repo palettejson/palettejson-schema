@@ -445,6 +445,19 @@
           "minimum": 1,
           "$comment": "1-based order index. If any color in a palette has position, sort by it; use array order only as tiebreaker."
         },
+
+        "groupId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$",
+          "description": "Optional group identifier. Colors with the same groupId are considered related (e.g., tonal scales, color harmonies, semantic families)."
+        },
+        "referenceInGroup": {
+          "type": "boolean",
+          "default": false,
+          "description": "If true, this color is the reference/canonical member of its groupId. This is the base tone from which tints/shades derive, or the canonical instance in a brand hierarchy. Maximum one color per group should set this to true.",
+          "$comment": "Business rule: At most one color with referenceInGroup=true per unique groupId value. This constraint requires external validation (tests/linters) as JSON Schema cannot express grouped counting operations."
+        },
+
         "notes": { "type": "string" },
         "legibility": { "$ref": "#/$defs/Legibility" }
       },
